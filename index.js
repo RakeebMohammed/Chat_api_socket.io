@@ -8,7 +8,8 @@ app.use(cors())
 const server=http.createServer(app)
 const io=new Server(server,{
     cors:{
-        origin:'https://kirmaani.onrender.com',
+    //    origin:'https://kirmaani.onrender.com',
+    origin:'http://localhost:3000',
         methods:['GET','POST']
     }
 })
